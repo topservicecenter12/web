@@ -21059,3 +21059,44 @@ p.vhny-para {
         transform: translateY(-10px);
     }
 }
+
+
+
+.floating-image {
+    
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}.floating-buttons {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-buttons a {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.floating-buttons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.floating-buttons img:hover {
+    transform: scale(1.1);
+}
